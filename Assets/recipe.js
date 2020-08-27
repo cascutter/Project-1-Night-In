@@ -1,4 +1,4 @@
-// Night in js file
+//JS for recipe page(?)
 
 //variable for page number in results
 var p = 1;
