@@ -1,5 +1,3 @@
-//JS for recipe page(?)
-
 //variable for page number in results
 var p = 1;
 //variable for ingredient searching, separated by comma
