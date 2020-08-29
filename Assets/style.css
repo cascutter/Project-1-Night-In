@@ -1,4 +1,13 @@
 /* Night in css file */
+#title-card {
+    background-color: #ffb3b3;
+    text-align: center;
+}
+
+.list {
+    margin: 5px 0px 25px 15px;
+    font-size: xx-large;
+    font-weight: 800;
+
 #btnGroup {
-    
 }
