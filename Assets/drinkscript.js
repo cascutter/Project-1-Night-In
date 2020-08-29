@@ -1,9 +1,12 @@
 // Night in js file
 
+$("#searchBtn").on("click", function(){
+var query = document.getElementById("searchDrinks").value;
+$("#searchDrinks").empty();
 var settings = {
 	"async": true,
 	"crossDomain": true,
-	"url": "https://the-cocktail-db.p.rapidapi.com/filter.php?i=Gin",
+	"url": "https://the-cocktail-db.p.rapidapi.com/filter.php?i=" + query,
 	"method": "GET",
 	"headers": {
 		"x-rapidapi-host": "the-cocktail-db.p.rapidapi.com",
@@ -13,6 +16,13 @@ var settings = {
 
 $.ajax(settings).done(function (response) {
 	console.log(response);
+
+
+
+});
+
+
+
 });
 	
  
