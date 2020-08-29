@@ -1,15 +1,19 @@
 //variable for page number in results
 var p = 1;
 //variable for ingredient searching, separated by comma
-var i = "onions"
+var i = ""
 //variable for keyword searching
-var q = "omelet"
+var q = ""
 
+
+$("#keywordSearch").on("click", function(){
+	var query = $("")
+})
 //sets up the website, logs the response
 var settings = {
 	"async": true,
 	"crossDomain": true,
-	"url": "https://recipe-puppy.p.rapidapi.com/?p=" + p + "&i=" + i + "&q=" + q,
+	"url": "https://recipe-puppy.p.rapidapi.com/?p=1&i=" + i + "&q=" + q,
 	"method": "GET",
 	"headers": {
 		"x-rapidapi-host": "recipe-puppy.p.rapidapi.com",
