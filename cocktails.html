@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bulma styling -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+    <!-- font awesome icons -->
+    <link rel=“stylesheet” href=“https://use.fontawesome.com/releases/v5.8.1/css/all.css”
+        integrity=“sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf” crossorigin=“anonymous” />
+    <link rel="stylesheet" href="Assets/style.css">
+    <title>A Night In: Movies</title>
+</head>
+
+<body>
+    <figure class="image is-5by3">
+        <img src="Images/drinks.jpg">
+    </figure>
+    <section class="hero is-primary">
+        <div class="hero-body">
+            <div class="container">
+                <h1 class="title">
+                    A Night In With Cocktails
+                </h1>
+                <h2 class="subtitle">
+                    Choose your venom
+                </h2>
+            </div>
+        </div>
+    </section>
+    <!--scroll down menu-->
+    <div class="field is-grouped">
+        <p class="control is-expanded">
+          <input id="searchDrinks" class="input" type="text" placeholder="Enter alcohol here">
+        </p>
+        <p class="control">
+          <a id="searchBtn" class="button is-info">
+            Drink Please
+          </a>
+        </p>
+      </div>
+    <div class="field">
+    </div>
+    <div class="field is-grouped">
+        <p class="control">
+            <button class="button is-link">
+                Movies
+            </button>
+        </p>
+        <p class="control">
+            <button class="button">
+                Recipes
+            </button>
+        </p>
+    </div>
+    <div class="content">
+        <ol id="drinksHere"></ol>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="Assets/drinkscript.js"></script>
+</body>
+
+</html>
+
+
+
+
+
+
