@@ -1,19 +1,16 @@
 //variable for page number in results
 var p = 1;
 //variable for ingredient searching, separated by comma
-var i = ""
-//variable for keyword searching
-var q = ""
 
 
-$("#keywordSearch").on("click", function(){
-	var query = $("")
-})
-//sets up the website, logs the response
+$("#ingredientSearchBtn").on("click", function(){
+	var ing = $("#ingredientSearch").value;
+	$("#ingredientSearch").empty();
+
 var settings = {
 	"async": true,
 	"crossDomain": true,
-	"url": "https://recipe-puppy.p.rapidapi.com/?p=1&i=" + i + "&q=" + q,
+	"url": "https://recipe-puppy.p.rapidapi.com/?p=1&i=" + ing,
 	"method": "GET",
 	"headers": {
 		"x-rapidapi-host": "recipe-puppy.p.rapidapi.com",
@@ -22,8 +19,11 @@ var settings = {
 }
 
 $.ajax(settings).done(function (response) {
-    console.log(response);
+	console.log(response);
+	
+	
 });
+})
 
 //when ingredients are entered, display first 10 recipes that match
 //when keyword is entered, display first 10 recipes that match
