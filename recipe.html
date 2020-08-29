@@ -21,11 +21,25 @@
 
 <body>
     <figure class="image is-5by3">
-        <img src="Assets/food.jpg">
+        <img src="Images/food.jpg">
     </figure>
 
+    <section class="hero is-dark">
+        <div class="hero-body">
+            <div class="container">
+                <h1 class="title">
+                    A Night In With a Home Cooked Meal
+                </h1>
+                <h2 class="subtitle">
+                    Please input your ingredients separated by commas, or a keyword.
+                </h2>
+            </div>
+        </div>
+    </section>
+
     <div class="columns is-mobile">
-        <div class="column is-full">Please input your ingredients separated by commas, or a keyword.</div>
+        <!-- empty column -->
+        <div class="column is-full"></div>
     </div>
     <div class="columns is-mobile">
         <div class="column is-half">Ingredients:
@@ -34,7 +48,7 @@
                     <input class="input" type="text" placeholder="onions,garlic,butter">
                 </p>
                 <p class="control">
-                    <a class="button is-dark">
+                    <a class="button is-dark" id="ingredientSearch">
                         Search
                     </a>
                 </p>
@@ -43,10 +57,10 @@
         <div class="column">Keyword:
             <div class="field is-grouped">
                 <p class="control is-expanded">
-                    <input class="input" type="text" placeholder="casseroles">
+                    <input class="input" type="text" placeholder="casserole">
                 </p>
                 <p class="control">
-                    <a class="button is-dark">
+                    <a class="button is-dark" id="keywordSearch">
                         Search
                     </a>
                 </p>

@@ -18,5 +18,9 @@ var settings = {
 }
 
 $.ajax(settings).done(function (response) {
-    //console.log(response);
+    console.log(response);
 });
+
+//when ingredients are entered, display first 10 recipes that match
+//when keyword is entered, display first 10 recipes that match
+//when both are entered, display first 10 recipes that match
