@@ -22,8 +22,8 @@ var ing = "blueberries"
 		var parseResponse = (JSON.parse(response));
 		var recipeTitle = parseResponse.results[0].title;
 		console.log(recipeTitle);
-		for (var i = 0; i < 10; i++) {
-			
+		for (var i = 0; i <= 10; i++) {
+
 		}
 
 
