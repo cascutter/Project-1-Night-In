@@ -25,21 +25,39 @@ $("#ingredientSearchBtn").on("click", function () {
 			recipeListDiv.append(recipeList);
 
 
-			//  var recipeItem = $("<li>")
-			//  recipeList.append(recipeItem);
-			//  $(recipeItem).addClass("list");
-			//  var recipeTitle = parseResponse.results[i].title;
-			//  recipeItem.text(recipeTitle);
+			var recipeItem = $("<li>")
+			recipeList.append(recipeItem);
+			$(recipeItem).addClass("list");
+			var recipeTitle = parseResponse.results[i].title;
+			recipeItem.text(recipeTitle);
 
-			//  var recipeLink = parseResponse.results[i].href;
+			var infoDiv = $("<div>");
+			$(infoDiv).attr("class", "box");
+			recipeList.append(infoDiv);
 
-			//  var infoDiv = $("<div>");
-			//  $(infoDiv).attr("class", "box");
-			//  recipeList.append(infoDiv);
-			//  var imgField = $("<img>");
-			//  infoDiv.append(imgField);
-			//  var imgURL = parseResponse.results[i].thumbnail;
-			//  $(imgField).attr("src", imgURL);
+			var imgField = $("<img>");
+			imgField.width(200);
+			infoDiv.append(imgField);
+			var imgURL = parseResponse.results[i].thumbnail;
+			$(imgField).attr("src", imgURL);
+
+			var ingField = $("<p>")
+			infoDiv.append(ingField);
+			var ingredients = "Some ingredients you'll need: " + parseResponse.results[i].ingredients;
+			ingField.append(ingredients);
+
+			var linkField = $("<p>")
+			infoDiv.append(linkField);
+
+			var recipeLinkText = "Click the link below to view the recipe! ";
+			infoDiv.append(recipeLinkText);
+
+			var recipeLink = $("<a>")
+			recipeLink.text(parseResponse.results[i].href);
+			infoDiv.append(recipeLink);
+			
+
+
 		}
 	});
 });
