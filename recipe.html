@@ -14,45 +14,48 @@
         integrity=“sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf” crossorigin=“anonymous” />
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="Assets/recipe.js"></script>
-
 
 </head>
 
 <body>
+
+
     <figure class="image is-5by3">
-        <img src="https://bulma.io/images/placeholders/800x480.png">
+        <img src="Images/food.jpg" alt="sandwich">
     </figure>
 
+    <section class="hero is-dark">
+        <div class="hero-body">
+            <div class="container">
+                <h1 class="title">
+                    A Night In With a Home Cooked Meal
+                </h1>
+                <h2 class="subtitle">
+                    Please input your ingredients separated by commas, or a keyword.
+                </h2>
+            </div>
+        </div>
+    </section>
+
     <div class="columns is-mobile">
-        <div class="column is-full">Please input your ingredients separated by commas, or a keyword.</div>
+        <!-- empty column for spacing -->
+        <div class="column is-full"></div>
     </div>
     <div class="columns is-mobile">
         <div class="column is-half">Ingredients:
             <div class="field is-grouped">
                 <p class="control is-expanded">
-                    <input class="input" type="text" placeholder="onions,garlic,butter">
+                    <input id="ingredientSearch" class="input" type="text" placeholder="onions,garlic,butter">
                 </p>
                 <p class="control">
-                    <a class="button is-dark">
-                        Search
-                    </a>
-                </p>
-            </div>
-        </div>
-        <div class="column">Keyword:
-            <div class="field is-grouped">
-                <p class="control is-expanded">
-                    <input class="input" type="text" placeholder="casseroles">
-                </p>
-                <p class="control">
-                    <a class="button is-dark">
+                    <a class="button is-dark" id="ingredientSearchBtn">
                         Search
                     </a>
                 </p>
             </div>
         </div>
     </div>
+
     <div class="field is-grouped">
         <p class="control">
             <a href="movies.html">
@@ -76,6 +79,9 @@
             </a>
         </p>
     </div>
+    <div id="recipeListDiv"></div>
+
+    <script src="./Assets/recipe.js"></script>
 </body>
 
 </html>
