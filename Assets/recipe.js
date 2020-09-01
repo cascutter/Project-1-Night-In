@@ -1,7 +1,7 @@
 $("#ingredientSearchBtn").on("click", function () {
 	var query = $("#ingredientSearch").val();
 	$("#recipeListDiv").empty();
-	
+
 	var settings = {
 		"async": true,
 		"crossDomain": true,
@@ -14,31 +14,32 @@ $("#ingredientSearchBtn").on("click", function () {
 	}
 
 	$.ajax(settings).done(function (response) {
-	 var parseResponse = (JSON.parse(response));
-	 console.log(parseResponse.results);
 
-	 for (var i = 0; i < 10; i++) {
+		var parseResponse = (JSON.parse(response));
+		console.log(parseResponse.results);
 
-	     var recipeListDiv = $("#recipeList");
-	     var recipeList = $("<ul>");
-		 recipeListDiv.append(recipeList);
-		 
+		for (var i = 0; i < 10; i++) {
 
-	     var recipeItem = $("<li>")
-	     recipeList.append(recipeItem);
-	     $(recipeItem).addClass("list");
-	     var recipeTitle = parseResponse.results[i].title;
-		 recipeItem.text(recipeTitle);
-		 
-		//  var recipeLink = parseResponse.results[i].href;
-		 
-		//  var infoDiv = $("<div>");
-	    //  $(infoDiv).attr("class", "box");
-	    //  recipeList.append(infoDiv);
-	    //  var imgField = $("<img>");
-	    //  infoDiv.append(imgField);
-	    //  var imgURL = parseResponse.results[i].thumbnail;
-	    //  $(imgField).attr("src", imgURL);
-	 }
-});
+			var recipeListDiv = $("#recipeList");
+			var recipeList = $("<ul>");
+			recipeListDiv.append(recipeList);
+
+
+			//  var recipeItem = $("<li>")
+			//  recipeList.append(recipeItem);
+			//  $(recipeItem).addClass("list");
+			//  var recipeTitle = parseResponse.results[i].title;
+			//  recipeItem.text(recipeTitle);
+
+			//  var recipeLink = parseResponse.results[i].href;
+
+			//  var infoDiv = $("<div>");
+			//  $(infoDiv).attr("class", "box");
+			//  recipeList.append(infoDiv);
+			//  var imgField = $("<img>");
+			//  infoDiv.append(imgField);
+			//  var imgURL = parseResponse.results[i].thumbnail;
+			//  $(imgField).attr("src", imgURL);
+		}
+	});
 });
