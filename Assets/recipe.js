@@ -1,16 +1,14 @@
-//variable for page number in results
-var p = 1;
-//variable for ingredient searching, separated by comma
-var ing = "blueberries"
 
-// $("#ingredientSearchBtn").on("click", function () {
-// 	var ing = //$("#ingredientSearch").value;
-// 		$("#ingredientSearch").empty();
+
+
+$("#ingredientSearchBtn").on("click", function () {
+	var query = $("#ingredientSearch").val();
+	$("#recipeListDiv").empty();
 
 	var settings = {
 		"async": true,
 		"crossDomain": true,
-		"url": "https://recipe-puppy.p.rapidapi.com/?p=1&i=" + ing,
+		"url": "https://recipe-puppy.p.rapidapi.com/?p=1&i=" + query,
 		"method": "GET",
 		"headers": {
 			"x-rapidapi-host": "recipe-puppy.p.rapidapi.com",
@@ -19,13 +17,40 @@ var ing = "blueberries"
 	}
 
 	$.ajax(settings).done(function (response) {
+
 		var parseResponse = (JSON.parse(response));
-		var recipeTitle = parseResponse.results[0].title;
-		console.log(recipeTitle);
-		for (var i = 0; i <= 10; i++) {
+		console.log(parseResponse);
+
+		for (var i = 0; i < 10; i++) {
+
+			var recipeListDiv = $("#recipeList");
+			var recipeList = $("<ul>");
+			recipeListDiv.append(recipeList);
+
+			//create var for listing recipes, then print recipe title
+			// var recipeItem = $("<li>")
+			// recipeList.append(recipeItem);
+			// $(recipeItem).addClass("list");
+			// var recipeTitle = parseResponse.results[i].title;
+			// recipeItem.text = recipeTitle;
+
+
+			// var recipeLink = parseResponse.results[i].href;
+
+
+
+			// var infoDiv = $("<div>");
+			// $(infoDiv).attr("class", "box");
+			// recipeList.append(infoDiv);
+			// var imgField = $("<img>");
+			// infoDiv.append(imgField);
+			// var imgURL = parseReponse.results[i].thumbnail;
+			// $(imgField).attr("src", imgURL);
+
+
 
 		}
 
 
 	});
-// })
+});
