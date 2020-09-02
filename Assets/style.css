@@ -1,13 +1,31 @@
 /* Night in css file */
-#title-card {
-    background-color: #ffb3b3;
+body {
+    background-color: black;
+}
+
+.title {
     text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: large;
+}
+
+.image {
+    border-style: solid;
+    border-color: black;
+    border-width: 1rem;
 }
 
 .list {
     margin: 5px 0px 25px 15px;
     font-size: xx-large;
     font-weight: 800;
+}
+
+#drink-search {
+    margin: 10px;
+}
 
 #btnGroup {
+    justify-content: center;
 }
+
