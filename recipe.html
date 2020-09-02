@@ -8,21 +8,30 @@
 
     <!-- bulma styling -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
-
+    <link rel="stylesheet" href="Assets/style.css">
     <!-- font awesome icons -->
     <link rel=“stylesheet” href=“https://use.fontawesome.com/releases/v5.8.1/css/all.css”
         integrity=“sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf” crossorigin=“anonymous” />
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
 </head>
 
 <body>
-
-
-    <figure class="image is-5by3">
-        <img src="Images/food.jpg" alt="sandwich">
+<div class="main container is-mobile">
+    <figure class="image">
+        <img src="Images/recipe.png" alt="curry stew">
     </figure>
+
+    <section class="container">
+        <h1 class="title">
+            What's cookin'?
+        </h1>
+        <h2 class="subtitle">
+            Enter your ingredients separated by commas, or a keyword.
+        </h2>
 
     <section class="hero is-dark">
         <div class="hero-body">
@@ -40,45 +49,11 @@
     <div class="columns is-mobile">
         <!-- empty column for spacing -->
         <div class="column is-full"></div>
-    </div>
-    <div class="columns is-mobile">
-        <div class="column is-half">Ingredients:
-            <div class="field is-grouped">
-                <p class="control is-expanded">
-                    <input id="ingredientSearch" class="input" type="text" placeholder="onions,garlic,butter">
-                </p>
-                <p class="control">
-                    <a class="button is-dark" id="ingredientSearchBtn">
-                        Search
-                    </a>
-                </p>
-            </div>
-        </div>
-    </div>
 
-    <div class="field is-grouped">
-        <p class="control">
-            <a href="movies.html">
-                <button class="button">
-                    Movies
-                </button>
-            </a>
-        </p>
-        <p class="control">
-            <a href="cocktails.html">
-                <button class="button">
-                    Cocktails
-                </button>
-            </a>
-        </p>
-        <p class="control">
-            <a href="homepage.html">
-                <button class="button">
-                    Home
-                </button>
-            </a>
-        </p>
-    </div>
+    </footer>
+</div>
+<script src="./Assets/recipe.js"></script>
+=======
     <div id="recipeList" class="content"></div>
 
     <script src="./Assets/recipe.js"></script>
