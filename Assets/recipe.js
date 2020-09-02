@@ -54,8 +54,9 @@ $("#ingredientSearchBtn").click (function () {
 			var recipeLinkText = "Click the link to view the recipe! ";
 			infoDiv.append(recipeLinkText);
 
-			var recipeLink = $("<a>")
-			recipeLink.attr("href", recipeLink);
+			var recipeLink = $("<a>");
+			recipeLink.attr("href", parseResponse.results[i].href);
+			recipeLink.attr("target", "_blank");
 			recipeLink.text(parseResponse.results[i].href);
 			infoDiv.append(recipeLink);
 			
