@@ -4,11 +4,15 @@
     text-align: center;
 }
 
-.list {
+#infoDiv {
     margin: 5px 0px 25px 15px;
-    font-size: xx-large;
+    
     font-weight: 800;
 }
 
-/*#btnGroup {
-}*/
+
+
+.ings {
+    padding-top: 25em;
+    padding-bottom: 22em;
+}

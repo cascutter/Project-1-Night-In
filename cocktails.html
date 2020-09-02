@@ -32,7 +32,7 @@
     <!--scroll down menu-->
     <div class="field is-grouped">
         <p class="control is-expanded">
-          <input id="searchDrinks" class="input" type="text" placeholder="Enter alcohol here">
+          <input id="searchDrinks" class="input" onfocus="this.value=''" type="text" placeholder="Enter alcohol here">
         </p>
         <p class="control">
           <a id="searchBtn" class="button is-info">
@@ -65,7 +65,12 @@
             </a>
         </p>
     </div>
-    <div id="drinksHere" class="content"></div>
+    <div class="columns box">
+        <div id="infoDiv" class="column content"></div>
+        <div id="drinksHere" class="column content"></div>
+    
+    </div>
+    
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="Assets/drinkscript.js"></script>
