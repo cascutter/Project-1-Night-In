@@ -1,12 +1,30 @@
 /* Night in css file */
-body {
-    background-color: black;
+* {
+    box-sizing: border-box;
+   }
+
+*:before, *:after {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    position: relative;
+    background: black;
 }
 
 .title {
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     font-size: large;
+    color: whitesmoke;
+}
+
+.subtitle {
+    margin: 1rem;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    color: gray;
 }
 
 .image {
@@ -22,10 +40,22 @@ body {
 }
 
 #drink-search {
-    margin: 10px;
+    justify-content: center;
+}
+
+#recipe-search {
+    justify-content: center;
+}
+
+#movie-search {
+    justify-content: center;
 }
 
 #btnGroup {
     justify-content: center;
+}
+
+.footer {
+    background-color: black;
 }
 
