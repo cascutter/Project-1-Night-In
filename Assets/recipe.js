@@ -1,4 +1,4 @@
-$("#ingredientSearchBtn").on("click", function () {
+$("#ingredientSearchBtn").click (function () {
 	var query = $("#ingredientSearch").val();
 	$("#recipeListDiv").empty();
 
@@ -14,6 +14,8 @@ $("#ingredientSearchBtn").on("click", function () {
 	}
 
 	$.ajax(settings).done(function (response) {
+
+		
 
 		var parseResponse = (JSON.parse(response));
 		console.log(parseResponse.results);
@@ -49,15 +51,17 @@ $("#ingredientSearchBtn").on("click", function () {
 			var linkField = $("<p>")
 			infoDiv.append(linkField);
 
-			var recipeLinkText = "Click the link below to view the recipe! ";
+			var recipeLinkText = "Click the link to view the recipe! ";
 			infoDiv.append(recipeLinkText);
 
 			var recipeLink = $("<a>")
+			recipeLink.attr("href", recipeLink);
 			recipeLink.text(parseResponse.results[i].href);
 			infoDiv.append(recipeLink);
 			
 
 
 		}
+		
 	});
 });
