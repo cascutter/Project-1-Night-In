@@ -17,19 +17,22 @@
     <title>A Night In: Movies</title>
 </head>
 <body>
+<div class="main-container is-mobile">
   <figure class="image">
     <img src="Images/movie.png">
   </figure> 
   <section class="container">
     <h1 class="title">
-      <p>It's movie time!</p>
-      <p>Grab the popcorn and select a genre:</p>
+      It's movie time!
     </h1>
+    <h2 class="subtitle">
+      Grab the popcorn and select a genre:
+    </h2>
   </section>
     <!--scroll down menu-->
-    <div class="field movie-menu">
+    <div class="column is-mobile" id="movie-search">
       <div class="control">
-        <div class="select is-primary">
+        <div class="select">
           <select>
             <option>Option 1</option>
             <option>Option 2</option>
@@ -44,7 +47,8 @@
       <div class="control">
         <div class="select is-info">
         </div>
-        <div class="field is-grouped" id="btnGroup">
+        <footer class="footer">
+          <div class="field is-grouped" id="btnGroup">
           <p class="control">
             <a href="recipe.html">
               <button class="button">
@@ -66,8 +70,10 @@
               </button>
             </a>
           </p>
-        </div>
+          </div>
+        </footer>
     </section>
+</div>
   <script src="Assets/movies.js"></script>
 </body>
 </html>

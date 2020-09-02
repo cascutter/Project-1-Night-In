@@ -17,30 +17,27 @@
 </head>
 
 <body>
+<div class="main-container is-mobile">
     <figure class="image is-3by2">
         <img src="Images/cocktail.png">
     </figure>
-    <section class="hero is-dark is-mobile">
-        <div class="hero-body">
-            <div class="container">
-                <h1 class="title">
-                    A Night In With Cocktails
-                </h1>
-                <h2 class="subtitle">
-                    Choose your venom
-                </h2>
-            </div>
-        </div>
-    </section>
-</br>
+    <div class="container">
+        <h1 class="title">
+            Pick your posion.
+        </h1>
+        <h2 class="subtitle">
+            Enter your spirit of choice:
+        </h2>
+    </div>
+    </br>
     <!--scroll down menu-->
     <div class="field is-grouped" id="drink-search">
-        <p class="control is-expanded">
-            <input id="searchDrinks" class="input" type="text" placeholder="Enter alcohol here">
+        <p class="control">
+            <input id="searchDrinks" class="input" type="text" placeholder="Ex: Vodka">
         </p>
         <p class="control">
-            <a id="searchBtn" class="button is-info">
-                Drink Please
+            <a id="searchBtn" class="button is-primary is-outlined">
+                Bartender!
             </a>
         </p>
     </div>
@@ -71,10 +68,9 @@
             </a>
         </p>
     </div>
-    </footer>
-    
-    
-    <script src="Assets/drinkscript.js"></script>
+    </footer>   
+</div>
+<script src="Assets/drinkscript.js"></script>
 </body>
 
 </html>
