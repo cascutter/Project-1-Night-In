@@ -9,15 +9,18 @@
     <!-- font awesome icons -->
     <link rel=“stylesheet” href=“https://use.fontawesome.com/releases/v5.8.1/css/all.css”
         integrity=“sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf” crossorigin=“anonymous” />
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="Assets/style.css">
     <title>A Night In: Movies</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 
 <body>
-    <figure class="image is-5by3">
-        <img src="Images/drinks.jpg">
+    <figure class="image is-3by2">
+        <img src="Images/cocktail.png">
     </figure>
-    <section class="hero is-primary">
+    <section class="hero is-dark is-mobile">
         <div class="hero-body">
             <div class="container">
                 <h1 class="title">
@@ -29,20 +32,23 @@
             </div>
         </div>
     </section>
+</br>
     <!--scroll down menu-->
-    <div class="field is-grouped">
+    <div class="field is-grouped" id="drink-search">
         <p class="control is-expanded">
-          <input id="searchDrinks" class="input" type="text" placeholder="Enter alcohol here">
+            <input id="searchDrinks" class="input" type="text" placeholder="Enter alcohol here">
         </p>
         <p class="control">
-          <a id="searchBtn" class="button is-info">
-            Drink Please
-          </a>
+            <a id="searchBtn" class="button is-info">
+                Drink Please
+            </a>
         </p>
-      </div>
+    </div>
     <div class="field">
     </div>
-    <div class="field is-grouped">
+    <div id="drinksHere" class="content"></div>
+    <footer class="footer">
+    <div class="field is-grouped"id="btnGroup">
         <p class="control">
             <a href="movies.html">
                 <button class="button">
@@ -65,16 +71,10 @@
             </a>
         </p>
     </div>
-    <div id="drinksHere" class="content"></div>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    </footer>
+    
+    
     <script src="Assets/drinkscript.js"></script>
 </body>
 
 </html>
-
-
-
-
-
-
