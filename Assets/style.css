@@ -34,9 +34,20 @@ html, body {
 }
 
 .list {
-    margin: 5px 0px 25px 15px;
-    font-size: xx-large;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: x-large;
+    color: whitesmoke;
     font-weight: 800;
+    list-style-type: none;
+    margin-right: 2rem;
+}
+
+.box {
+    background-color: whitesmoke;
+    opacity: 90%;
+    margin-right: 2rem;
+    overflow: hidden;
 }
 
 #drink-search {
@@ -53,6 +64,10 @@ html, body {
 
 #btnGroup {
     justify-content: center;
+}
+
+i.fas {
+    color: white;
 }
 
 .footer {
