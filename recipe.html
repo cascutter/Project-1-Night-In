@@ -30,13 +30,16 @@
             What's cookin'?
         </h1>
         <h2 class="subtitle">
-            Enter your ingredients (separated by commas) to get some recipe ideas.
+            Enter your ingredients (separated by commas), and a keyword to get some recipe ideas.
         </h2>
     </section>
     </br>
     <div class="field is-grouped" id="drink-search">
         <p class="control">
-            <input id="ingredientSearch" class="input" type="text" placeholder="Ex: onions,garlic,butter">
+            <input id="ingredientSearch" class="input" type="text" placeholder="Ex: onions,garlic,butter" onfocus= "this.value=''">
+        </p>
+        <p class="control">
+            <input id="keywordSearch" class = "input" type="text" placeholder="Ex: casserole" onfocus="this.value=''">
         </p>
         <p class="control">
             <a id="ingredientSearchBtn" class="button is-primary is-outlined">
