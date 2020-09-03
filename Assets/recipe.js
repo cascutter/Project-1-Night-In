@@ -1,7 +1,12 @@
 //click function for search query
 $("#ingredientSearchBtn").click(function () {
+	//ingredient search variable
 	var query = $("#ingredientSearch").val();
-	//var p = parseInt(Math.floor(math.random));
+	//keyword search variable
+	var keyword = $("#keywordSearch").val();
+	//variable for page number, 10 recipes per page, gives a random page between 1 and 30
+	var p = Math.floor((Math.random() * 30) + 1);
+	console.log(p)
 	$("#recipeList").empty();
 
 	
@@ -9,7 +14,7 @@ $("#ingredientSearchBtn").click(function () {
 	var settings = {
 		"async": true,
 		"crossDomain": true,
-		"url": "https://recipe-puppy.p.rapidapi.com/?p=1&i=" + query,
+		"url": "https://recipe-puppy.p.rapidapi.com/?p=" + p + "&i=" + query + "&q=" + keyword,
 		"method": "GET",
 		"headers": {
 			"x-rapidapi-host": "recipe-puppy.p.rapidapi.com",
