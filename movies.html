@@ -16,12 +16,20 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     
     <title>A Night In: Movies</title>
+
+    <!--Added CSS-->
+    <style>
+      .movieList {
+        list-style-type: none !important;
+      }
+    </style>
+
 </head>
 
 
   <body>
     <div class="main-container is-mobile">
-      <figure class="image">
+      <figure class="image">80970uyighkbn 8
         <img src="Images/movie.png" alt="popcorn and remote">
       </figure> 
       <section class="container">
@@ -37,18 +45,19 @@
     <div class="field has-addons">
       <div class="control is-expanded">
         <div class="select is-fullwidth">
-          <select id="genre"></select>
+          <select id="genre">
+          </select>
         </div>
       </div>
       <div class="control">
         <button type="submit" class="button is-primary" id="submit-genre">Choose</button>
       </div>
     </div>
+    
+    <!--Movie Titles-->
+    <div id="movieList" class="content"></div>
 
-    <!--list-->
-    <div id="movie-list"></div>
 
-          
           <footer class="footer">
             <div class="field is-grouped" id="btnGroup">
             <p class="control">
@@ -75,7 +84,6 @@
             </div>
           </footer>
       </section>
-      <script src="./Assets/movies.js"></script>
   </div>
     <script src="Assets/movies.js"></script>
   </body>
