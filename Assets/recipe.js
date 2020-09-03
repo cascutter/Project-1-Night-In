@@ -1,6 +1,10 @@
-$("#ingredientSearchBtn").click (function () {
+//click function for search query
+$("#ingredientSearchBtn").click(function () {
 	var query = $("#ingredientSearch").val();
-	$("#recipeListDiv").empty();
+	//var p = parseInt(Math.floor(math.random));
+	$("#recipeList").empty();
+
+	
 
 	var settings = {
 		"async": true,
@@ -14,55 +18,60 @@ $("#ingredientSearchBtn").click (function () {
 	}
 
 	$.ajax(settings).done(function (response) {
-
 		
-
+		//parse response
 		var parseResponse = (JSON.parse(response));
+		//log an array for each recipe result
 		console.log(parseResponse.results);
 
 		for (var i = 0; i < 10; i++) {
-
+			//variables for the title and list items
 			var recipeListDiv = $("#recipeList");
 			var recipeList = $("<ul>");
-			recipeListDiv.append(recipeList);
-
-
 			var recipeItem = $("<li>")
+			var recipeTitle = parseResponse.results[i].title;			
+
+			//add list of recipes and each li item to the div
+			recipeListDiv.append(recipeList);
 			recipeList.append(recipeItem);
+
+			//adds class name to recipe items
 			$(recipeItem).addClass("list");
-			var recipeTitle = parseResponse.results[i].title;
+
+			//adds recipe title to the recipe card
 			recipeItem.text(recipeTitle);
 
+			//variables for information elements to go into
 			var infoDiv = $("<div>");
+			var imgField = $("<img>");
+			var imgURL = parseResponse.results[i].thumbnail;
+			var ingField = $("<p>")
+			var ingredients = "Some ingredients you'll need: " + parseResponse.results[i].ingredients;
+			var linkField = $("<p>")
+			var recipeLink = $("<a>");
+
+			//styles the info div to a box, put the recipe list into it
 			$(infoDiv).attr("class", "box");
 			recipeList.append(infoDiv);
 
-			var imgField = $("<img>");
-			imgField.width(200);
-			infoDiv.append(imgField);
-			var imgURL = parseResponse.results[i].thumbnail;
+			//sets img source to the thumbnail from DOM
 			$(imgField).attr("src", imgURL);
-
-			var ingField = $("<p>")
-			infoDiv.append(ingField);
-			var ingredients = "Some ingredients you'll need: " + parseResponse.results[i].ingredients;
+			//sets img alt to the recipe title
+			$(imgField).attr("alt", recipeTitle);
+			//expand img to be 350px wide
+			imgField.width(350);
+			//add ingredients to its field
 			ingField.append(ingredients);
-
-			var linkField = $("<p>")
-			infoDiv.append(linkField);
-
-			var recipeLinkText = "Click the link to view the recipe! ";
-			infoDiv.append(recipeLinkText);
-
-			var recipeLink = $("<a>");
+			//locates the link location
 			recipeLink.attr("href", parseResponse.results[i].href);
+			//opens link in new tab
 			recipeLink.attr("target", "_blank");
-			recipeLink.text(parseResponse.results[i].href);
-			infoDiv.append(recipeLink);
-			
+			//link to recipe page
+			recipeLink.text("Click here to view the recipe!");	
 
-
+			//appends all elements of the info div
+			infoDiv.append(imgField, ingField, linkField, recipeLink);
 		}
-		
+
 	});
 });
