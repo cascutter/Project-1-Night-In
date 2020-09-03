@@ -1,13 +1,61 @@
 /* Night in css file */
-#title-card {
-    background-color: #ffb3b3;
+* {
+    box-sizing: border-box;
+   }
+
+*:before, *:after {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    position: relative;
+    background: black;
+}
+
+.title {
     text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: large;
+    color: whitesmoke;
+}
+
+.subtitle {
+    margin: 1rem;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    color: gray;
+}
+
+.image {
+    border-style: solid;
+    border-color: black;
+    border-width: 1rem;
 }
 
 .list {
     margin: 5px 0px 25px 15px;
     font-size: xx-large;
     font-weight: 800;
+}
+
+#drink-search {
+    justify-content: center;
+}
+
+#recipe-search {
+    justify-content: center;
+}
+
+#movie-search {
+    justify-content: center;
+}
 
 #btnGroup {
+    justify-content: center;
 }
+
+.footer {
+    background-color: black;
+}
+
