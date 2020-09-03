@@ -33,7 +33,7 @@
     <!--scroll down menu-->
     <div class="field is-grouped" id="drink-search">
         <p class="control">
-            <input id="searchDrinks" class="input" type="text" placeholder="Ex: Vodka">
+            <input id="searchDrinks" onfocus="this.value=''" class="input" type="text" placeholder="Ex: Vodka">
         </p>
         <p class="control">
             <a id="searchBtn" class="button is-primary is-outlined">
@@ -68,6 +68,14 @@
             </a>
         </p>
     </div>
+    <div class="columns">
+        <div id="infoDiv" class="column content"></div>
+        <div id="drinksHere" class="column content"></div>
+    
+    </div>
+    
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     </footer>   
 </div>
 <script src="Assets/drinkscript.js"></script>
