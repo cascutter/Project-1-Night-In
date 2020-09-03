@@ -12,68 +12,71 @@
     <!-- Google fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 
+       
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     
     <title>A Night In: Movies</title>
 </head>
-<body>
-<div class="main-container is-mobile">
-  <figure class="image">
-    <img src="Images/movie.png" alt="popcorn and remote">
-  </figure> 
-  <section class="container">
-    <h1 class="title">
-      It's movie time!
-    </h1>
-    <h2 class="subtitle">
-      Grab the popcorn and select a genre:
-    </h2>
-  </section>
+
+
+  <body>
+    <div class="main-container is-mobile">
+      <figure class="image">
+        <img src="Images/movie.png" alt="popcorn and remote">
+      </figure> 
+      <section class="container">
+        <h1 class="title">
+          It's movie time!
+        </h1>
+        <h2 class="subtitle">
+          Grab the popcorn and select a genre:
+        </h2>
+      </section>
+      
     <!--scroll down menu-->
-    <div class="column is-mobile" id="movie-search">
-      <div class="control">
-        <div class="select">
-          <select>
-            <option>Option 1</option>
-            <option>Option 2</option>
-            <option>Option 3</option>
-            <option>Option 4</option>
-            <option>Option 5</option>
-          </select>
+    <div class="field has-addons">
+      <div class="control is-expanded">
+        <div class="select is-fullwidth">
+          <select id="genre"></select>
         </div>
       </div>
-    </div>
-    <div class="field">
       <div class="control">
-        <div class="select is-info">
-        </div>
-        <footer class="footer">
-          <div class="field is-grouped" id="btnGroup">
-          <p class="control">
-            <a href="recipe.html">
-              <button class="button">
-                Recipes
-              </button>
-            </a>
-          </p>
-          <p class="control">
-            <a href="cocktails.html">
-              <button class="button">
-                Cocktails
-              </button>
-            </a>
-          </p>
-          <p class="control">
-            <a href="homepage.html">
-              <button class="button">
-                Home
-              </button>
-            </a>
-          </p>
-          </div>
-        </footer>
-    </section>
-</div>
-  <script src="Assets/movies.js"></script>
-</body>
+        <button type="submit" class="button is-primary" id="submit-genre">Choose</button>
+      </div>
+    </div>
+
+    <!--list-->
+    <div id="movie-list"></div>
+
+          
+          <footer class="footer">
+            <div class="field is-grouped" id="btnGroup">
+            <p class="control">
+              <a href="recipe.html">
+                <button class="button">
+                  Recipes
+                </button>
+              </a>
+            </p>
+            <p class="control">
+              <a href="cocktails.html">
+                <button class="button">
+                  Cocktails
+                </button>
+              </a>
+            </p>
+            <p class="control">
+              <a href="homepage.html">
+                <button class="button">
+                  Home
+                </button>
+              </a>
+            </p>
+            </div>
+          </footer>
+      </section>
+      <script src="./Assets/movies.js"></script>
+  </div>
+    <script src="Assets/movies.js"></script>
+  </body>
 </html>
