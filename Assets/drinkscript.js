@@ -3,7 +3,8 @@
 $("#searchBtn").on("click", function(){
 var query = document.getElementById("searchDrinks").value;
 $("#infoDiv").empty();
-var drinkArray = [];
+
+//API call for
 var settings = {
 	"async": true,
 	"crossDomain": true,
@@ -21,22 +22,27 @@ $.ajax(settings).done(function (response) {
 	console.log(results);
 
 	for(var i = 0; i < 10; i++) {
+		var newEl = $("<div>");
+		var h1El = $("<h1>");
+		var imgEl = $("<img>");
+		var instruct = $("<div>");
 
-		var drinkItem = document.createElement("h1");
-		$("#infoDiv").append(drinkItem);
-		drinkItem.innerHTML = results[i].strDrink;
-
-		var picItem = document.createElement("img");
-		$("#infoDiv").append(picItem);
-		$(picItem).attr("src", results[i].strDrinkThumb);
-
-		
+		// Drink name call
 		var drinkID = (results[i].idDrink);
+		newEl.addClass("card");
+		newEl.attr("drink-id", drinkID)
+		$("#infoDiv").append(newEl);
+		h1El.text(results[i].strDrink);
+		newEl.append(h1El);
+
+		// Image call
+		imgEl.attr('src', results[i].strDrinkThumb);
+		newEl.append(imgEl);
 		
 		//API call for ingredients and instructions
 		var settings = {
 		"async": true,
-		"crossDomain": true,
+		"crossDomain": true,	
 		"url": "https://the-cocktail-db.p.rapidapi.com/lookup.php?i=" + drinkID,
 		"method": "GET",
 		"headers": {
@@ -46,15 +52,14 @@ $.ajax(settings).done(function (response) {
 	}
 		
 	$.ajax(settings).done(function (respond) {
-	
+		
 		var resultsd = respond.drinks;
-		console.log(resultsd[0]);
 
+		// Call for drink insructions
 		for(var d = 0; d < resultsd.length ; d++) {
-		var instr = document.createElement("p");
-		//$(instr).addClass("ings");
-		$("#infoDiv").append(instr);
-		instr.innerHTML = resultsd[d].strInstructions;	
+		var instructEl = $("<p>");
+		instructEl.text(resultsd[d].strInstructions);
+		$('.card[drink-id =' +resultsd[d].idDrink+ ']').append(instructEl);		
 	};
 	});
 	};
