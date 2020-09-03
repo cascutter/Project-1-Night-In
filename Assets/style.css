@@ -54,9 +54,12 @@ html, body {
     justify-content: center;
 }
 
-#recipe-search {
-    justify-content: center;
-}
+#ingredientSearch, 
+#keywordSearch,
+#ingredientSearchBtn {
+    margin-right: 2rem;
+    margin-left: 2rem;
+    }
 
 #movie-search {
     justify-content: center;
