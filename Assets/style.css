@@ -34,7 +34,8 @@ html, body {
 }
 
 .img {
-    size: 200px;
+    max-width: 100px;
+    max-height: 100px;
 }
 
 .list {
@@ -42,6 +43,16 @@ html, body {
     text-align: center;
     font-size: x-large;
     color: turquoise;
+    list-style-type: none;
+}
+
+/*.row {
+    align-items: stretch;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
 }
 
 .scrolling-wrapper {
@@ -49,20 +60,38 @@ html, body {
     overflow-y: hidden;
     white-space: nowrap;
 }
+
 .card {
+    min-width: 0;
+    max-width: 33%;
+    max-height: max-content;
+    padding: .75rem;
+    padding-right: 2rem;
+    margin-bottom: 2rem;
+    border: 0;
+    flex-basis: 33%;
+    flex-grow: 0;
+    flex-shrink: 0;
     display: inline-block;
     text-align: center;
-    margin-right: 2rem;
-    background-color: black;
+    
+}
+
+.card-content {
+    display: inline-block;
+    word-wrap: break-word;
+    max-width: 100rem;
+}*/
+
+.card {
+    text-align: center;
+    padding: 2rem;
+    margin-bottom: 2rem;
     font-family: 'Montserrat', sans-serif;
-    color: whitesmoke;
+    background-color: whitesmoke;
 }
 
-.limit {
-    width: 20rem;
-
-}
-#infoDiv {
+/*#infoDiv {
     justify-content: center;
     font-weight: 800;
     list-style-type: none;
@@ -71,41 +100,38 @@ html, body {
     margin-left: 2rem;
     font-family: 'Montserrat', sans-serif;
     color: whitesmoke;
-}
+}*/
 
 .ings {
     padding-top: 25em;
     padding-bottom: 22em;
 }
-#drink-search {
-    justify-content: center;
-}
 
 #drink-search {
     justify-content: center;
 }
 
-#ingredientSearch, 
-#keywordSearch,
-#ingredientSearchBtn {
-    margin-right: 2rem;
-    margin-left: 2rem;
+.field {
+    margin-right: 3rem;
+    margin-left: 3rem;
     }
+
 
 #movie-search {
     justify-content: center;
-}
-
-#btnGroup {
-    justify-content: center;
-}
-
-i.fas {
-    color: white;
 }
 
 .footer {
     background-color: black;
 }
 
+#btnGroup {
+    justify-content: center;
+}
+
+#movieBtn,
+#recipeBtn,
+#cocktailBtn {
+    margin: 1rem;
+}
 
