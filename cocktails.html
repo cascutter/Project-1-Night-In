@@ -7,15 +7,13 @@
     <!-- bulma styling -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
     <!-- font awesome icons -->
-    <link rel=“stylesheet” href=“https://use.fontawesome.com/releases/v5.8.1/css/all.css”
-        integrity=“sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf” crossorigin=“anonymous” />
+    <script src="https://kit.fontawesome.com/9d49fb545e.js" crossorigin="anonymous"></script>
     <!-- Google fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="Assets/style.css">
     <title>A Night In: Movies</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
-
 <body>
 <div class="main-container is-mobile">
     <figure class="image">
@@ -31,10 +29,11 @@
     </div>
     </br>
     <!--scroll down menu-->
-    <div class="field is-grouped" id="drink-search">
+    <div class="field is-vertical" id="drink-search">
         <p class="control">
             <input id="searchDrinks" onfocus="this.value=''" class="input" type="text" placeholder="Ex: Vodka">
         </p>
+    </br>
         <p class="control">
             <a id="searchBtn" class="button is-primary is-outlined">
                 Bartender!
@@ -43,43 +42,55 @@
     </div>
     <!--<div class="field">-->
     </div>
-    
-    <div class="container is-fluid scrolling-wrapper">
-    <div class="columns is-multiline">
-        <div id="infoDiv" class="column is-one-quarter content limit"></div>
-        <div id="drinksHere" class="column is-one-quarter content limit"></div>
-    </div>
-    </div>
-    <footer class="footer">
-    <div class="field is-grouped"id="btnGroup">
-        <p class="control">
-            <a href="movies.html">
-                <button class="button">
-                    Movies
-                </button>
-            </a>
-        </p>
-        <p class="control">
-            <a href="recipe.html">
-                <button class="button">
-                    Recipes
-                </button>
-            </a>
-        </p>
-        <p class="control">
-            <a href="homepage.html">
-                <button class="button">
-                    Home
-                </button>
-            </a>
-        </p>
-    </div>
-    
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    </footer>   
+    <div class="container is-fluid is-mobile">
+        <div class="row is-mobile">
+        <header class="card-header">
+            <h1 class="card-header-title" id="drink-name"></h1>
+        </header>
+        <div class="card-content">
+            <div class="content" id="infoDiv"></div>
+            <div class="content" id="drinksHere"></div>
+        </div>
+        </div>
+    </div>
+    <!-- Footer -->
+  <footer class="footer">
+    <div class="field is-grouped" id="btnGroup">
+      <p class="control">
+        <a href="movies.html">
+          <button class="button is-light is-outlined">
+            <span class="icon">
+              <i class="fas fa-film"></i>
+            </span>
+            <span>Movies</span>
+          </button>
+        </a>
+      </p>
+      <p class="control">
+        <a href="recipe.html">
+          <button class="button is-light is-outlined">
+            <span class="icon">
+              <i class="fas fa-hamburger"></i>
+            </span>
+            <span>Recipes</span>
+          </button>
+        </a>
+      </p>
+      <p class="control">
+        <a href="homepage.html">
+          <button class="button is-light is-outlined">
+            <span class="icon">
+              <i class="fas fa-home"></i>
+            </span>
+            <span>Home</span>
+          </button>
+        </a>
+      </p>
+    </div>
+  </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>  
 </div>
 <script src="Assets/drinkscript.js"></script>
 </body>
-
 </html>
