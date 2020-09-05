@@ -43,6 +43,7 @@ html, body {
     text-align: center;
     font-size: x-large;
     color: turquoise;
+    -webkit-text-stroke: 1px turquoise;
     list-style-type: none;
 }
 
@@ -52,12 +53,17 @@ html, body {
     margin-bottom: 2rem;
     font-family: 'Montserrat', sans-serif;
     background-color: rgba(95, 93, 93, 0.685);
+    box-shadow: 0px 0px 10px 10px whitesmoke;
 }
 
 
 p {
     color: whitesmoke;
     font-size: large;
+}
+
+h5 {
+    color: whitesmoke;
 }
 
 .ings {
