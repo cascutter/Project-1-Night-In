@@ -56,7 +56,7 @@ $("#ingredientSearchBtn").click(function () {
 			var recipeLink = $("<a>");
 
 			//styles the info div to a box, put the recipe list into it
-			$(infoDiv).attr("class", "box");
+			$(infoDiv).attr("class", "card");
 			recipeList.append(infoDiv);
 
 			//sets img source to the thumbnail from DOM
