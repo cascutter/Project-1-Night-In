@@ -62,6 +62,7 @@ $("#submit-genre").on("click", function() {
 
 				//Appends
 				movieInfo.append(movieTitle, movieOverview, movieImg, movieRating);
+				$(movieItem).attr("class", "card");
 				movieItem.append(movieInfo);
 				movieList.append(movieItem);
 			}
