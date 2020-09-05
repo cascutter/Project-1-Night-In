@@ -7,73 +7,95 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
     <link rel="stylesheet" href="Assets/style.css">
     <!-- font awesome icons -->
-    <link rel=“stylesheet” href=“https://use.fontawesome.com/releases/v5.8.1/css/all.css”
-        integrity=“sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf” crossorigin=“anonymous” />
+    <script src="https://kit.fontawesome.com/9d49fb545e.js" crossorigin="anonymous"></script>
     <!-- Google fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 
+       
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     
     <title>A Night In: Movies</title>
+
+    <!--Added CSS-->
+    <style>
+      .movieList {
+        list-style-type: none !important;
+      }
+    </style>
+
 </head>
 <body>
-<div class="main-container is-mobile">
-  <figure class="image">
-    <img src="Images/movie.png" alt="popcorn and remote">
-  </figure> 
-  <section class="container">
-    <h1 class="title">
-      It's movie time!
-    </h1>
-    <h2 class="subtitle">
-      Grab the popcorn and select a genre:
-    </h2>
-  </section>
+  <div class="main-container is-mobile">
+    <figure class="image">
+      <img src="Images/movie.png" alt="popcorn and remote">
+    </figure> 
+    <section class="container">
+      <h1 class="title">
+        It's movie time!
+      </h1>
+      <h2 class="subtitle">
+        Grab the popcorn and select a genre:
+      </h2>
+    </section>
     <!--scroll down menu-->
-    <div class="column is-mobile" id="movie-search">
-      <div class="control">
-        <div class="select">
-          <select>
-            <option>Option 1</option>
-            <option>Option 2</option>
-            <option>Option 3</option>
-            <option>Option 4</option>
-            <option>Option 5</option>
+    <div class="field has-addons">
+      <div class="control is-expanded">
+        <div class="select is-fullwidth is-outlined is-primary">
+          <select id="genre">
           </select>
         </div>
       </div>
-    </div>
-    <div class="field">
       <div class="control">
-        <div class="select is-info">
-        </div>
-        <footer class="footer">
-          <div class="field is-grouped" id="btnGroup">
-          <p class="control">
-            <a href="recipe.html">
-              <button class="button">
-                Recipes
-              </button>
-            </a>
-          </p>
-          <p class="control">
-            <a href="cocktails.html">
-              <button class="button">
-                Cocktails
-              </button>
-            </a>
-          </p>
-          <p class="control">
-            <a href="homepage.html">
-              <button class="button">
-                Home
-              </button>
-            </a>
-          </p>
-          </div>
-        </footer>
-    </section>
-</div>
+        <button type="submit" class="button is-primary is-outlined" id="submit-genre">Choose</button>
+      </div>
+    </div>
+    <!--Movie Titles-->
+    <div class="container is-fluid is-mobile">
+      <div class="row is-mobile">
+      <header class="card-header">
+          <h1 class="card-header-title" id="recipe-name"></h1>
+      </header>
+      <div class="card-content">
+        <div id="movieList" class="content"></div>
+      </div>
+    </div>
+  </div>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="field is-grouped" id="btnGroup">
+      <p class="control">
+        <a href="recipe.html">
+          <button class="button is-light is-outlined">
+            <span class="icon">
+              <i class="fas fa-hamburger"></i>
+            </span>
+            <span>Recipes</span>
+          </button>
+        </a>
+      </p>
+      <p class="control">
+        <a href="cocktails.html">
+          <button class="button is-light is-outlined">
+            <span class="icon">
+              <i class="fas fa-cocktail"></i>
+            </span>
+            <span>Cocktails</span>
+          </button>
+        </a>
+      </p>
+      <p class="control">
+        <a href="homepage.html">
+          <button class="button is-light is-outlined">
+            <span class="icon">
+              <i class="fas fa-home"></i>
+            </span>
+            <span>Home</span>
+          </button>
+        </a>
+      </p>
+    </div>
+  </footer>
+  </section>
   <script src="Assets/movies.js"></script>
 </body>
 </html>

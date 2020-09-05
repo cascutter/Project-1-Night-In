@@ -2,7 +2,7 @@
 
 
 // On click function
-$("#searchBtn").on("click", function() {
+$("#searchBtn").on("click", function () {
 
 	var query = document.getElementById("searchDrinks").value;
 	$("#infoDiv").empty();
@@ -71,5 +71,5 @@ $("#searchBtn").on("click", function() {
 });
 
 
-	
- 
+
+
