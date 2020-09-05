@@ -33,11 +33,13 @@ $("#submit-genre").on("click", function() {
 			url: optionsURL,
 			method: "GET"
 		}).then(function(optionResponse) {
+			//console.log(optionResponse.results[1].id);
+			// ***TRYING TO GET IMDB LINK ****
+			//var movieURL = "https://api.themoviedb.org/3/movie/" + optionResponse.results[i].id + "?api_key=" + APIKey + "a&language=en-US";
 
 			//Calling the div where the list of movies go
 			var movieListDiv = $("#movieList");
 			var movieList = $("<ul>").addClass("movieList");
-			//ADDED A STYLE TO UL LIST IN HTML HEAD
 
 			//adding the info from the API into the div
 			for (var i = 0; i < optionResponse.results.length; i++) {
@@ -50,14 +52,17 @@ $("#submit-genre").on("click", function() {
 				movieTitle.addClass("list");
 				movieTitle.text(optionResponse.results[i].title);
 
-				var movieOverview = $("<h5>");
+				//movie Summary
+				var movieOverview = $("<p>");
 				movieOverview.text(optionResponse.results[i].overview);
 
+				//movie Image
 				var movieImg = $("<img>")
 				var ImgURL = "https://image.tmdb.org/t/p/w200/" + optionResponse.results[i].poster_path;
 				movieImg.attr("src", ImgURL);
 
-				var movieRating = $("<h4>");
+				//movie Rating
+				var movieRating = $("<p>");
 				movieRating.text("Average Rating: " + optionResponse.results[i].vote_average + "/10");
 
 				//Appends
@@ -69,6 +74,11 @@ $("#submit-genre").on("click", function() {
 			movieListDiv.append(movieList);
 		}); 
 	});
+
+	// $("#submit-genre").keyup(function () {
+	// 	if (event.keyCode === 13) {
+	// 		//$("#searchBtn").click();
+	// 		getMovies();
 
 	
 	
