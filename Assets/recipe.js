@@ -75,7 +75,7 @@ $("#ingredientSearchBtn").click(function () {
 			recipeLink.text("Click here to view the recipe!");
 
 			//appends all elements of the info div
-			infoDiv.append(imgField, ingField, linkField, recipeLink);
+			infoDiv.append(recipeItem, imgField, ingField, linkField, recipeLink);
 		}
 
 	});
