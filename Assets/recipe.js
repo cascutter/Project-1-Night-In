@@ -9,7 +9,7 @@ $("#ingredientSearchBtn").click(function () {
 	console.log(p)
 	$("#recipeList").empty();
 
-	
+
 
 	var settings = {
 		"async": true,
@@ -23,7 +23,7 @@ $("#ingredientSearchBtn").click(function () {
 	}
 
 	$.ajax(settings).done(function (response) {
-		
+
 		//parse response
 		var parseResponse = (JSON.parse(response));
 		//log an array for each recipe result
@@ -34,7 +34,7 @@ $("#ingredientSearchBtn").click(function () {
 			var recipeListDiv = $("#recipeList");
 			var recipeList = $("<ul>");
 			var recipeItem = $("<li>")
-			var recipeTitle = parseResponse.results[i].title;			
+			var recipeTitle = parseResponse.results[i].title;
 
 			//add list of recipes and each li item to the div
 			recipeListDiv.append(recipeList);
@@ -72,10 +72,10 @@ $("#ingredientSearchBtn").click(function () {
 			//opens link in new tab
 			recipeLink.attr("target", "_blank");
 			//link to recipe page
-			recipeLink.text("Click here to view the recipe!");	
+			recipeLink.text("Click here to view the recipe!");
 
 			//appends all elements of the info div
-			infoDiv.append(imgField, ingField, linkField, recipeLink);
+			infoDiv.append(recipeItem, imgField, ingField, linkField, recipeLink);
 		}
 
 	});
