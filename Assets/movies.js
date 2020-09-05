@@ -37,7 +37,6 @@ $("#submit-genre").on("click", function() {
 			//Calling the div where the list of movies go
 			var movieListDiv = $("#movieList");
 			var movieList = $("<ul>").addClass("movieList");
-			//ADDED A STYLE TO UL LIST IN HTML HEAD
 
 			//adding the info from the API into the div
 			for (var i = 0; i < optionResponse.results.length; i++) {
@@ -68,6 +67,11 @@ $("#submit-genre").on("click", function() {
 			movieListDiv.append(movieList);
 		}); 
 	});
+
+	// $("#submit-genre").keyup(function () {
+	// 	if (event.keyCode === 13) {
+	// 		//$("#searchBtn").click();
+	// 		getMovies();
 
 	
 	
