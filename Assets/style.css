@@ -46,43 +46,6 @@ html, body {
     list-style-type: none;
 }
 
-/*.row {
-    align-items: stretch;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    overflow-y: hidden;
-}
-
-.scrolling-wrapper {
-    overflow-x: scroll;
-    overflow-y: hidden;
-    white-space: nowrap;
-}
-
-.card {
-    min-width: 0;
-    max-width: 33%;
-    max-height: max-content;
-    padding: .75rem;
-    padding-right: 2rem;
-    margin-bottom: 2rem;
-    border: 0;
-    flex-basis: 33%;
-    flex-grow: 0;
-    flex-shrink: 0;
-    display: inline-block;
-    text-align: center;
-    
-}
-
-.card-content {
-    display: inline-block;
-    word-wrap: break-word;
-    max-width: 100rem;
-}*/
-
 .card {
     text-align: center;
     padding: 2rem;
@@ -91,20 +54,35 @@ html, body {
     background-color: whitesmoke;
 }
 
-/*#infoDiv {
-    justify-content: center;
-    font-weight: 800;
-    list-style-type: none;
-    margin-top: 2rem;
-    margin-right: 2rem;
-    margin-left: 2rem;
-    font-family: 'Montserrat', sans-serif;
-    color: whitesmoke;
-}*/
-
+#homeBtn {
+    display: none; 
+    position: fixed; 
+    bottom: 20px;
+    right: 30px;
+    z-index: 99; 
+    border: none; 
+    outline: none; 
+    background-color: turquoise; 
+    color: white; 
+    cursor: pointer; 
+    padding: 15px; 
+    border-radius: 10px; 
+    font-size: 16px; 
+  }
+  
 .ings {
-    padding-top: 25em;
-    padding-bottom: 22em;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: x-large;
+    font-weight: bold;
+    text-decoration-line: underline;
+}
+
+.text {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: large;
+    font-weight: 600;
 }
 
 #drink-search {
@@ -134,4 +112,3 @@ html, body {
 #cocktailBtn {
     margin: 1rem;
 }
-
