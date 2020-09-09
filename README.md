@@ -6,13 +6,23 @@ Night In is a mobile-first app that uses multiple APIs to retrieve movie selecti
 
 This project was created to provide a sleek, easy to use, multi-source content search mobile-first application with the intention of allowing the user ample opportunity for discovery and variety. 
 
-### User Story
+## User Story
 
 As a home-body or person adhereing to social distancing guidelines, I want new ideas for things I can make or do at home so that I may add some variety to my normal routine and genuinely enjoy the at-home experience.
 
+### Mobile
+
+<img src="https://media.giphy.com/media/dWy0zSEokMC5GdQJnB/giphy.gif">
+
+### Desktop
+
+<img src="https://media.giphy.com/media/eMbG4jnl5p1MO2ZWbb/giphy.gif">
+
+### Link to Deployed Application
+
+https://cascutter.github.io/Project-1-Night-In/
+
 ## Features
-
-
 
 * Night In has four distinct pages: a homepage, movie search, recipe search, and cocktail search.
 
