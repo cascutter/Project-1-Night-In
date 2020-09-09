@@ -13,11 +13,10 @@
     <script src="https://kit.fontawesome.com/9d49fb545e.js" crossorigin="anonymous"></script>
     <!-- Google fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 <body>
     <div class="main container is-mobile">
+        <!-- Main page image -->
         <figure class="image">
             <img src="Assets/Images/recipe.png" alt="curry stew">
         </figure>
@@ -30,8 +29,10 @@
         </h2>
     </section>
     </br>
+    <!-- scroll down menu -->
     <div class="field is-vertical">
         <p class="control">
+            <!-- search input field -->
             <input id="ingredientSearch" class="input" type="text" placeholder="Ex: onions,garlic,butter" onfocus= "this.value=''">
         </p>
     </br>
@@ -40,6 +41,7 @@
         </p>
     </br>
         <p class="control">
+            <!-- search button -->
             <a id="ingredientSearchBtn" class="button is-primary is-outlined">
                 Let's Eat!
             </a>
@@ -48,15 +50,20 @@
     <div class="container is-fluid is-mobile">
         <div class="row is-mobile">
         <header class="card-header">
+            <!-- recipe name here -->
             <h1 class="card-header-title" id="recipe-name"></h1>
         </header>
         <div class="card-content">
+            <!-- card with recipe info here -->
             <div id="recipeList" class="content"></div>
+            <!-- return to top button -->
+            <button onclick="topFunction()" id="homeBtn" title="Go to top">Return to Top</button>
             </div>
         </div>
     </div>
     <!-- Footer -->
     <footer class="footer">
+        <!-- nav buttons -->
         <div class="field is-grouped" id="btnGroup">
         <p class="control">
             <a href="movies.html">
@@ -91,6 +98,8 @@
         </div>
     </footer>
     </div>
+    <!-- local js and jquery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="./Assets/recipe.js"></script>
 </body>
 </html>

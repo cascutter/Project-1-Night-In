@@ -80,3 +80,22 @@ $("#ingredientSearchBtn").click(function () {
 
 	});
 });
+
+//return to top button and function
+homebutton = document.getElementById("homeBtn");
+
+
+window.onscroll = function () { scrollFunction() };
+
+function scrollFunction() {
+	if (document.body.scrollTop > 900 || document.documentElement.scrollTop > 900) {
+		homebutton.style.display = "block";
+	} else {
+		homebutton.style.display = "none";
+	}
+}
+
+function topFunction() {
+	document.body.scrollTop = 0;
+	document.documentElement.scrollTop = 0;
+}
