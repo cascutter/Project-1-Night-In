@@ -4,7 +4,7 @@ Night In is a mobile-first app that uses multiple APIs to retrieve movie selecti
 
 ## Motivation
 
-This project was created to provide a sleek, easy to use, multi-source content search mobile-first application with the intention of allowing the user ample opportunity for discovery and variety. 
+This project was created to provide a sleek, easy to use, multi-source content, mobile-first application with the intention of allowing the user ample opportunity for discovery and variety. 
 
 ## User Story
 
@@ -26,7 +26,7 @@ https://cascutter.github.io/Project-1-Night-In/
 
 * Night In has four distinct pages: a homepage, movie search, recipe search, and cocktail search.
 
-* The homepage consists of three link buttons, inviting the user to choose where they gein their experience.
+* The homepage consists of three link buttons, inviting the user to choose where they begin their experience.
 
 * The movie search page consists of a dropdown menu where the user can select their genre of interest. When the user makes their selection, they are presented with a list of popular movie titles, each of which has a brief summary, a poster image, the average viewer rating, and a link to the IMDB page for that title.
 
