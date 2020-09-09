@@ -27,7 +27,7 @@
 <body>
   <div class="main-container is-mobile">
     <figure class="image">
-      <img src="Assets/Images/movie.png" alt="popcorn and remote">
+      <img src="Assets/Images/movie.png" alt="popcorn and remote" id="header-image">
     </figure> 
     <section class="container">
       <h1 class="title">
@@ -49,20 +49,7 @@
         <button type="submit" class="button is-primary is-outlined" id="submit-genre">Choose</button>
       </div>
     </div>
-    <!--Movie Titles-->
-    <div class="container is-fluid is-mobile">
-      <div class="row is-mobile">
-      <header class="card-header">
-          <h1 class="card-header-title" id="recipe-name"></h1>
-      </header>
-      <div class="card-content">
-        <div id="movieList" class="content">
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Footer -->
-  <footer class="footer">
+    <!-- Nav buttons -->
     <div class="field is-grouped" id="btnGroup">
       <p class="control">
         <a href="recipe.html">
@@ -95,6 +82,23 @@
         </a>
       </p>
     </div>
+    <!--Movie Titles-->
+    <div class="container is-fluid is-mobile">
+      <div class="row is-mobile">
+      <header class="card-header">
+          <h1 class="card-header-title" id="recipe-name"></h1>
+      </header>
+      <div class="card-content">
+        <div id="movieList" class="content">
+        </div>
+      </div>
+    </div>
+  </div>
+   <!--Return to top button-->
+   <button onclick="topFunction()" id="homeBtn" title="Go to top">Return to Top</button>
+  <!-- Footer -->
+  <footer class="footer">
+    © 2020 RACR 
   </footer>
   </section>
   <script src="Assets/movies.js"></script>
