@@ -14,7 +14,13 @@ html, body {
 }
 
 img {
-   max-width: 500px;
+   max-width: 100%;
+}
+
+@media screen and (min-width: 600px) {
+    img {
+        max-width: 500px;
+    }
 }
 
 .title {
@@ -34,7 +40,7 @@ img {
 #header-image {
     border-style: solid;
     border-color: black;
-    border-width: 1rem;
+    border-width: 2rem;
     max-width: 100%;
 }
 
