@@ -16,84 +16,78 @@
 </head>
 
 <body>
-  <div class="main-container is-mobile">
+<div class="main container is-mobile">
     <!--Main page image-->
     <figure class="image">
-      <img src="Assets/Images/cocktail.png" alt="cocktail being poured">
+      <img src="Assets/Images/cocktail.png" alt="cocktail being poured" id="header-image">
     </figure>
-    <div class="container">
+    <div class="intro">
       <h1 class="title">
-        Pick your potion.
-      </h1>
-      <h2 class="subtitle">
+        Pick your poison.
+    </h1>
+    <h2 class="subtitle">
         Enter your spirit of choice:
-      </h2>
-    </div>
-    </br>
-    <!--scroll down menu-->
-    <div class="field is-vertical" id="drink-search">
-      <!--Search input field-->
-      <p class="control">
+    </h2>
+</div>
+</br>
+<!--scroll down menu-->
+<div class="field is-vertical" id="drink-search">
+    <!--Search input field-->
+    <p class="control">
         <input id="searchDrinks" onfocus="this.value=''" class="input" type="text" placeholder="Ex: Vodka">
-      </p>
-      </br>
-      <!--Search button-->
-      <p class="control">
-        <a id="searchBtn" class="button is-primary is-outlined">
-          Bartender!
-        </a>
-      </p>
+    </p>
+</br>
+<!--Search button-->
+<p class="control">
+    <a id="searchBtn" class="button is-primary is-outlined">
+        Bartender!
+    </a>
+</p>
+</div>
+<!--Nav buttons-->
+<div class="field is-grouped" id="btnGroup">
+  <p class="control">
+    <a href="movies.html">
+      <button class="button is-light is-outlined">
+        <span class="icon">
+          <i class="fas fa-film"></i>
+        </span>
+        <span>Movies</span>
+      </button>
+    </a>
+  </p>
+  <p class="control">
+    <a href="recipe.html">
+      <button class="button is-light is-outlined">
+        <span class="icon">
+          <i class="fas fa-hamburger"></i>
+        </span>
+        <span>Recipes</span>
+      </button>
+    </a>
+  </p>
+  <p class="control">
+    <a href="index.html">
+      <button class="button is-light is-outlined">
+        <span class="icon">
+          <i class="fas fa-home"></i>
+        </span>
+        <span>Home</span>
+      </button>
+    </a>
+  </p>
+</div>
+<div class="container is-fluid is-mobile">
+    <div class="card-content">
+        <!---Drink info here-->
+        <div class="content" id="infoDiv"></div>
+        <!--Return to top button-->
+        <button onclick="topFunction()" id="homeBtn" title="Go to top">Return to Top</button>
     </div>
-    <div class="container is-fluid is-mobile">
-      <div class="row is-mobile">
-        <header class="card-header">
-          <!--Drink name here-->
-          <h1 class="card-header-title" id="drink-name"></h1>
-        </header>
-        <div class="card-content">
-          <!---Drink info here-->
-          <div class="content" id="infoDiv"></div>
-          <!--Return to top button-->
-          <button onclick="topFunction()" id="homeBtn" title="Go to top">Return to Top</button>
-        </div>
-      </div>
-    </div>
-  </div>
+</div>
   <!-- Footer -->
   <footer class="footer">
-    <!--Nav buttons-->
-    <div class="field is-grouped" id="btnGroup">
-      <p class="control">
-        <a href="movies.html">
-          <button class="button is-light is-outlined">
-            <span class="icon">
-              <i class="fas fa-film"></i>
-            </span>
-            <span>Movies</span>
-          </button>
-        </a>
-      </p>
-      <p class="control">
-        <a href="recipe.html">
-          <button class="button is-light is-outlined">
-            <span class="icon">
-              <i class="fas fa-hamburger"></i>
-            </span>
-            <span>Recipes</span>
-          </button>
-        </a>
-      </p>
-      <p class="control">
-        <a href="index.html">
-          <button class="button is-light is-outlined">
-            <span class="icon">
-              <i class="fas fa-home"></i>
-            </span>
-            <span>Home</span>
-          </button>
-        </a>
-      </p>
-    </div>
+      © 2020 RACR 
   </footer>
   <!--Javascript/Jquery sources-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
