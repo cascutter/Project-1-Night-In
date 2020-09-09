@@ -14,92 +14,95 @@
     <!-- Google fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <div class="main container is-mobile">
         <!-- Main page image -->
         <figure class="image">
             <img src="Assets/Images/recipe.png" alt="curry stew">
         </figure>
-    <section class="container">
-        <h1 class="title">
-            What's cookin'?
-        </h1>
-        <h2 class="subtitle">
-            Enter your ingredients (separated by commas), and a keyword to get some recipe ideas.
-        </h2>
-    </section>
-    </br>
-    <!-- scroll down menu -->
-    <div class="field is-vertical">
-        <p class="control">
-            <!-- search input field -->
-            <input id="ingredientSearch" class="input" type="text" placeholder="Ex: onions,garlic,butter" onfocus= "this.value=''">
-        </p>
-    </br>
-        <p class="control">
-            <input id="keywordSearch" class = "input" type="text" placeholder="Ex: casserole" onfocus="this.value=''">
-        </p>
-    </br>
-        <p class="control">
-            <!-- search button -->
-            <a id="ingredientSearchBtn" class="button is-primary is-outlined">
-                Let's Eat!
-            </a>
-        </p>
-    </div>
-    <div class="container is-fluid is-mobile">
-        <div class="row is-mobile">
-        <header class="card-header">
-            <!-- recipe name here -->
-            <h1 class="card-header-title" id="recipe-name"></h1>
-        </header>
-        <div class="card-content">
-            <!-- card with recipe info here -->
-            <div id="recipeList" class="content"></div>
-            <!-- return to top button -->
-            <button onclick="topFunction()" id="homeBtn" title="Go to top">Return to Top</button>
+        <section class="container">
+            <h1 class="title">
+                What's cookin'?
+            </h1>
+            <h2 class="subtitle">
+                Enter your ingredients (separated by commas), and a keyword to get some recipe ideas.
+            </h2>
+        </section>
+        </br>
+        <!-- scroll down menu -->
+        <div class="field is-vertical">
+            <p class="control">
+                <!-- search input field -->
+                <input id="ingredientSearch" class="input" type="text" placeholder="Ex: onions,garlic,butter"
+                    onfocus="this.value=''">
+            </p>
+            </br>
+            <p class="control">
+                <input id="keywordSearch" class="input" type="text" placeholder="Ex: casserole" onfocus="this.value=''">
+            </p>
+            </br>
+            <p class="control">
+                <!-- search button -->
+                <a id="ingredientSearchBtn" class="button is-primary is-outlined">
+                    Let's Eat!
+                </a>
+            </p>
+        </div>
+        <div class="container is-fluid is-mobile">
+            <div class="row is-mobile">
+                <header class="card-header">
+                    <!-- recipe name here -->
+                    <h1 class="card-header-title" id="recipe-name"></h1>
+                </header>
+                <div class="card-content">
+                    <!-- card with recipe info here -->
+                    <div id="recipeList" class="content"></div>
+                    <!-- return to top button -->
+                    <button onclick="topFunction()" id="homeBtn" title="Go to top">Return to Top</button>
+                </div>
             </div>
         </div>
-    </div>
-    <!-- Footer -->
-    <footer class="footer">
-        <!-- nav buttons -->
-        <div class="field is-grouped" id="btnGroup">
-        <p class="control">
-            <a href="movies.html">
-            <button class="button is-light is-outlined">
-                <span class="icon">
-                <i class="fas fa-film"></i>
-                </span>
-                <span>Movies</span>
-            </button>
-            </a>
-        </p>
-        <p class="control">
-            <a href="cocktails.html">
-            <button class="button is-light is-outlined">
-                <span class="icon">
-                <i class="fas fa-cocktail"></i>
-                </span>
-                <span>Cocktails</span>
-            </button>
-            </a>
-        </p>
-        <p class="control">
-            <a href="index.html">
-            <button class="button is-light is-outlined">
-                <span class="icon">
-                <i class="fas fa-home"></i>
-                </span>
-                <span>Home</span>
-            </button>
-            </a>
-        </p>
-        </div>
-    </footer>
+        <!-- Footer -->
+        <footer class="footer">
+            <!-- nav buttons -->
+            <div class="field is-grouped" id="btnGroup">
+                <p class="control">
+                    <a href="movies.html">
+                        <button class="button is-light is-outlined">
+                            <span class="icon">
+                                <i class="fas fa-film"></i>
+                            </span>
+                            <span>Movies</span>
+                        </button>
+                    </a>
+                </p>
+                <p class="control">
+                    <a href="cocktails.html">
+                        <button class="button is-light is-outlined">
+                            <span class="icon">
+                                <i class="fas fa-cocktail"></i>
+                            </span>
+                            <span>Cocktails</span>
+                        </button>
+                    </a>
+                </p>
+                <p class="control">
+                    <a href="index.html">
+                        <button class="button is-light is-outlined">
+                            <span class="icon">
+                                <i class="fas fa-home"></i>
+                            </span>
+                            <span>Home</span>
+                        </button>
+                    </a>
+                </p>
+            </div>
+        </footer>
     </div>
     <!-- local js and jquery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="./Assets/recipe.js"></script>
 </body>
+
 </html>
