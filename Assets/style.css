@@ -33,16 +33,12 @@ html, body {
     border-width: 1rem;
 }
 
-.img {
-    max-width: 100px;
-    max-height: 100px;
-}
-
 .list {
     font-family: 'Montserrat', sans-serif;
     text-align: center;
     font-size: x-large;
     color: turquoise;
+    -webkit-text-stroke: 1px turquoise;
     list-style-type: none;
 }
 
@@ -51,9 +47,12 @@ html, body {
     padding: 2rem;
     margin-bottom: 2rem;
     font-family: 'Montserrat', sans-serif;
-    background-color: whitesmoke;
+    background-color: rgba(95, 93, 93, 0.685);
+    box-shadow: 0px 0px 20px 5px whitesmoke;
+    list-style-type: none;
 }
 
+<<<<<<< HEAD
 #homeBtn {
     display: none; 
     position: fixed; 
@@ -76,6 +75,15 @@ html, body {
     font-size: x-large;
     font-weight: bold;
     text-decoration-line: underline;
+=======
+p {
+    color: whitesmoke;
+    font-size: large;
+}
+
+h5 {
+    color: whitesmoke;
+>>>>>>> 1830e88ffd1bda75390b06574fbff1e9b88fcf90
 }
 
 .text {
@@ -92,7 +100,7 @@ html, body {
 .field {
     margin-right: 3rem;
     margin-left: 3rem;
-    }
+}
 
 
 #movie-search {
