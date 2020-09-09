@@ -2,57 +2,66 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- bulma styling -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
-    <!-- font awesome icons -->
-    <script src="https://kit.fontawesome.com/9d49fb545e.js" crossorigin="anonymous"></script>
-    <!-- Google fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="Assets/style.css">
-    <title>Pick your poison.</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- bulma styling -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+  <!-- font awesome icons -->
+  <script src="https://kit.fontawesome.com/9d49fb545e.js" crossorigin="anonymous"></script>
+  <!-- Google fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="Assets/style.css">
+  <title>Pick your poison.</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
+
 <body>
-<div class="main-container is-mobile">
+  <div class="main-container is-mobile">
+    <!--Main page image-->
     <figure class="image">
-        <img src="Assets/Images/cocktail.png" alt="cocktail being poured">
+      <img src="Assets/Images/cocktail.png" alt="cocktail being poured">
     </figure>
     <div class="container">
-        <h1 class="title">
-            Pick your posion.
-        </h1>
-        <h2 class="subtitle">
-            Enter your spirit of choice:
-        </h2>
+      <h1 class="title">
+        Pick your potion.
+      </h1>
+      <h2 class="subtitle">
+        Enter your spirit of choice:
+      </h2>
     </div>
     </br>
     <!--scroll down menu-->
     <div class="field is-vertical" id="drink-search">
-        <p class="control">
-            <input id="searchDrinks" onfocus="this.value=''" class="input" type="text" placeholder="Ex: Vodka">
-        </p>
-    </br>
-        <p class="control">
-            <a id="searchBtn" class="button is-primary is-outlined">
-                Bartender!
-            </a>
-        </p>
+      <!--Search input field-->
+      <p class="control">
+        <input id="searchDrinks" onfocus="this.value=''" class="input" type="text" placeholder="Ex: Vodka">
+      </p>
+      </br>
+      <!--Search button-->
+      <p class="control">
+        <a id="searchBtn" class="button is-primary is-outlined">
+          Bartender!
+        </a>
+      </p>
     </div>
     <div class="container is-fluid is-mobile">
-        <div class="row is-mobile">
+      <div class="row is-mobile">
         <header class="card-header">
-            <h1 class="card-header-title" id="drink-name"></h1>
+          <!--Drink name here-->
+          <h1 class="card-header-title" id="drink-name"></h1>
         </header>
         <div class="card-content">
-            <div class="content" id="infoDiv"></div>
-            <div class="content" id="drinksHere"></div>
+          <!---Drink info here-->
+          <div class="content" id="infoDiv"></div>
+          <!--Return to top button-->
+          <button onclick="topFunction()" id="homeBtn" title="Go to top">Return to Top</button>
         </div>
-        </div>
+      </div>
     </div>
-    <!-- Footer -->
+  </div>
+  <!-- Footer -->
   <footer class="footer">
+    <!--Nav buttons-->
     <div class="field is-grouped" id="btnGroup">
       <p class="control">
         <a href="movies.html">
@@ -86,8 +95,10 @@
       </p>
     </div>
   </footer>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>  
-</div>
-<script src="Assets/drinkscript.js"></script>
+  <!--Javascript/Jquery sources-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  </div>
+  <script src="Assets/drinkscript.js"></script>
 </body>
+
 </html>
