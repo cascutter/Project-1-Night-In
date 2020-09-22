@@ -46,7 +46,7 @@ https://cascutter.github.io/Project-1-Night-In/
 * © 2020 RACR (Ross, Almand, Cutter, Rodriguez)
 
 ## License
-https://img.shields.io/badge/license-MIT-brightgreen
+![badge]https://img.shields.io/badge/license-MIT-brightgreen
 
 
 
