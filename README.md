@@ -45,6 +45,9 @@ https://cascutter.github.io/Project-1-Night-In/
 * H/t: David Garza
 * © 2020 RACR (Ross, Almand, Cutter, Rodriguez)
 
+## License
+https://img.shields.io/badge/license-MIT-brightgreen
+
 
 
 
